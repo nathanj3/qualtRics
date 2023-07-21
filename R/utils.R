@@ -146,6 +146,7 @@ generate_url <-
         allsurveys = "{rooturl}/surveys/",
         allmailinglists = "{rooturl}/mailinglists/",
         metadata = "{rooturl}/surveys/{surveyID}/",
+        createsurvey = "{rooturl}/survey-definitions",
         exportresponses = "{rooturl}/surveys/{surveyID}/export-responses/",
         exportresponses_progress = "{rooturl}/surveys/{surveyID}/export-responses/{requestID}",
         exportresponses_file = "{rooturl}/surveys/{surveyID}/export-responses/{fileID}/file",
@@ -153,6 +154,8 @@ generate_url <-
         fetchmailinglist = "{rooturl}/mailinglists/{mailinglistID}/contacts/",
         fetchdistributions = "{rooturl}/distributions?surveyId={surveyID}",
         fetchdistributionhistory = "{rooturl}/distributions/{distributionID}/history",
+        importresponses = "{rooturl}/surveys/{surveyID}/import-responses",
+        importresponses_progress = "{rooturl}/surveys/{surveyID}/import-responses/{importProgressID}",
         listdistributionlinks = "{rooturl}/distributions/{distributionID}/links?surveyId={surveyID}",
         rlang::abort("Internal error: invalid URL generation query")
       )
